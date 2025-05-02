@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Aldrich&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Boldonse&family=Bowlby+One+SC&family=Cookie&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Gabarito:wght@400..900&family=Inconsolata:wght@200..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Leckerli+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Notable&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Paprika&family=Playwrite+IN:wght@100..400&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Uchen&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url("image/img01.webp") center / cover no-repeat fixed;
+    font-family: 'Trebuchet MS';
+}
+
+h1 {
+    padding-top: 60px;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+h1>span {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+    color: rgb(36, 34, 32);
+    letter-spacing: 3px;
+}
+
+span:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.calculatercontainer {
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputcont {
+    border: 8px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 10px rgb(34, 37, 37);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(129, 121, 121, 0.5);
+}
+
+.calinput>input {
+    width: 280px;
+    padding: 22px;
+    border-radius: 16px;
+    border: 3px solid rgba(53, 47, 47, 0.6);
+    text-align: right;
+    outline: none;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 18px;
+}
+
+td {
+    width: 55px;
+    height: 55px;
+    border: 3px solid orangered;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.operator,
+td:hover {
+    background-color: orangered;
+    border: 3px solid #2c1f1f;
+    color: white;
+}
