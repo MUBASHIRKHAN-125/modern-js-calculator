@@ -46,7 +46,6 @@ span:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(129, 121, 121, 0.5);
 }
 
 .calinput>input {
@@ -81,8 +80,32 @@ th {
 }
 
 .operator,
-td:hover {
+th:hover {
     background-color: orangered;
     border: 3px solid #2c1f1f;
     color: white;
+}
+
+@media (max-width:430px) {
+    h1>span {
+        letter-spacing: 1px;
+        font-size: 27px;
+    }
+    .calinput>input {
+        width: 274px;
+        font-size: 38px;
+    }
+}
+@media (max-width:330px) {
+    h1>span {
+        letter-spacing: 3px;
+        font-size: 32px;
+    }
+    .inputcont {
+        padding: 15px 3px;
+    }
+    th {
+        width: 50px;
+        height: 50px;
+    }
 }

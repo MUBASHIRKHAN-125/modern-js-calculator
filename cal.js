@@ -12,9 +12,9 @@ function calc(x, y, ope) {
     if (ope === "/") return x / y;
 
     if (ope === "%") {
-        if(x > y){
+        if (x > y) {
             return x % y;
-        }else{
+        } else {
             return y % x;
         }
     };
@@ -24,8 +24,8 @@ calculatorTr.forEach(list => {
     list.addEventListener('click', (e) => {
         const clickedRow = e.target.innerText;
 
-        if(clickedRow !== "DEL" && clickedRow !== "="){
-            input.value +=  clickedRow;
+        if (clickedRow !== "DEL" && clickedRow !== "=") {
+            input.value += clickedRow;
         }
 
         if (clickedRow === '=') {
@@ -38,15 +38,16 @@ calculatorTr.forEach(list => {
                 const y = Number(matched[3]);
                 const result = calc(x, y, ope)
                 input.value = result;
-            }else{
+            }
+            else {
                 input.value = "Math error";
             }
         }
-        if (clickedRow === 'AC'){
+        if (clickedRow === 'AC') {
             input.value = "";
         };
-        if(clickedRow === "DEL"){
-            input.value =  input.value.slice(0 ,-1);
+        if (clickedRow === "DEL") {
+            input.value = input.value.slice(0, -1);
         }
     });
 });
