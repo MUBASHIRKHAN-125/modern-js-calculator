@@ -16,14 +16,14 @@ body {
 h1 {
     padding-top: 60px;
     text-align: center;
-    font-family: "Poppins";
+     font-family: 'Poppins', sans-serif;
 }
 
 h1>span {
     border-bottom: 3px solid transparent;
     padding-bottom: 4px;
     transition: all 0.3s ease-in-out;
-    color: rgb(36, 34, 32);
+    color:white;
     letter-spacing: 3px;
 }
 

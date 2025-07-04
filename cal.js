@@ -22,6 +22,7 @@ function calc(x, y, ope) {
 calculatorTr.forEach(list => {
 
     list.addEventListener('click', (e) => {
+        
         const clickedRow = e.target.innerText;
 
         if (clickedRow !== "DEL" && clickedRow !== "=") {
