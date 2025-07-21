@@ -40,9 +40,6 @@ calculatorTr.forEach(list => {
                 const result = calc(x, y, ope)
                 input.value = result;
             }
-            else {
-                input.value = "Math error";
-            }
         }
         if (clickedRow === 'AC') {
             input.value = "";
